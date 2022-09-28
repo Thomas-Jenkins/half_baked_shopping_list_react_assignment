@@ -23,6 +23,9 @@ Search for `TODO` in the app to find the various places you need to add code
 
 ## Rubric
 
+
+
+
 | Looking for...                                                                        | Points |
 | ------------------------------------------------------------------------------------- | ------ |
 | User Provider exports `user` and `setUser` state and setter function                  | 2      |
