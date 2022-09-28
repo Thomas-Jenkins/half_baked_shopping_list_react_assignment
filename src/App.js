@@ -19,7 +19,7 @@ function App() {
         <Route path="*">
           <Redirect to="/auth/Auth" />
         </Route>
-        {/* <Route exact path="/" component={}></Route> */}
+        <Route exact path="/" component={Auth}></Route>
       </Switch>
     </div>
   );
