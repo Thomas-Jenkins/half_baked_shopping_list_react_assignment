@@ -4,7 +4,7 @@ import './App.css';
 import Auth from './components/Auth/Auth';
 import Header from './components/Header';
 import Items from './components/Items/Items';
-import { UserContext } from './context/UserProvider';
+import { UserContext } from './context/UserContext';
 import backgroundImage from './supermarket.jpeg';
 
 function App() {
@@ -16,7 +16,10 @@ function App() {
       <Switch>
         <Route path="/auth/:type" component={Auth} />
         <Route path="/items" component={Items} />
-        <Route exact path="/"></Route>
+        <Route path="*">
+          <Redirect to="/auth/Auth" />
+        </Route>
+        {/* <Route exact path="/" component={}></Route> */}
       </Switch>
     </div>
   );
